@@ -1,4 +1,4 @@
-export const errorHandler = ( error, req, res, next) => {
+ export const errorHandler = ( error, req, res, next) => {
     if(error){
         const statusCode = error.statusCode || 500;
         const message = error.message || "internal server error";
@@ -20,3 +20,4 @@ export class CustomError extends Error {
 
     }
 }
+
